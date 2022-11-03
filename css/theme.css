@@ -1,0 +1,43 @@
+:root{
+    /* --primary-background: #203040; */
+    --primary-background: #edf1f5;
+
+    --light-background: #edf1f5;
+    --dark-background: #203040;
+    --primary-font-color: #004385;
+    /* --primary-font-color: #00ab88; */
+    --dark-font-color: rgba(0, 0, 0, 0.559);
+}
+
+.genreStroke{
+    padding: 4px 6px;
+    border: 1px solid #a0faff6d;
+    border-radius: 2px;
+    color: #00ab88;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 2px;
+    font-size: 0.7rem;
+}
+
+.genreStroke:hover{
+    background-color: #a0faff;
+    color: rgb(27, 27, 27); 
+    /* border: 1px solid #00ab88; */
+    text-decoration: none;
+}
+
+.genreFill{
+    text-align: center;
+    align-items: center;
+    /* background-color: #002745; */
+    background-color: #5c00ac;
+    /* background-color: darkslategrey; */
+    /* background-color: rgb(255, 174, 0); */
+    color: white;
+    /* color: darkslategrey; */
+    padding: 4px 6px;
+    border-radius: 2px;
+    font-size: 0.7rem;
+    margin-right: 2px;
+}
