@@ -1,0 +1,330 @@
+<html>
+
+<head>
+    <title>Anidox::Home Page</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/altSlide.css">
+    <script src="js/navOptionsToggle.js" type="module"></script>
+    <script src="js/navShadowEffect.js"></script>
+    <script src="js/slideChange.js"></script>
+    <script src="js/slider.js" type="module"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/info.js" type="module"></script>
+    <script src="js/character.js" type="module"></script>
+    <script src="js/homePsychologicalSection.js" type="module"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="icon" href="img/favicon.svg" type="image/icon type">
+</head>
+
+<body>
+
+    <a href="#altSlideContainer" class="scrollToTop">
+        <i class="fa fa-caret-up"></i>
+    </a>
+
+    <div class="headerNav">
+        <!-- <img src="img/aa.png" alt="" class="webLogo"> -->
+        <p class="headerLogo">ANiDOX</p>
+
+
+        <div class="navOptions">
+            <div class="navOptionsList genre" >
+                <p class="navOptionsTitle">GENRE</p>
+                <div class="genreList hiddenList">
+                    <a class="genreOptions"></a>
+                </div>
+            </div>
+            <div class="navOptionsList year">
+                <p class="navOptionsTitle">YEAR</p>
+                <div class="yearList hiddenList">
+                    <a class="yearOptions "></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="searchBar">
+            <p class="searchContainer">
+                <i class="fa fa-search"></i>
+            </p>
+            <input type="text" class="inputBox" placeholder="Search">
+        </div>
+        <!-- searchBar -->
+
+        <div class="tableOfContent">
+            <div class="listIconContainer">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+            <div class="tableOfContentList">
+                <a><i class="fa fa-caret-right"></i>Latest News</a>
+                <a><i class="fa fa-caret-right"></i>List: Trending</a>
+                <a><i class="fa fa-caret-right"></i>List: Beginners</a>
+                <a><i class="fa fa-caret-right"></i>Popular Character</a>
+                <a><i class="fa fa-caret-right"></i> List: Mystery</a>
+
+            </div>
+            
+        </div>
+
+        <div class="userContainer">
+            <p class="userIconContainer">
+                <i class="fa-regular fa-user"></i>
+            </p>
+            <div class="userSettings">
+                <a href=""><i class="fa fa-user-pen"></i>Edit Bio</a>
+                <a href=""><i class="fa fa-rotate"></i>Change Account</a>
+                <a href=""><i class="fa fa-bookmark"></i>Watchlist</a>
+                <a href=""><i class="fa fa-message"></i>My Reviews</a>
+                <a href=""><i class="fa-solid fa-chart-simple"></i>My Top Chart</a>
+            </div>
+        </div>
+        <!-- userContainer -->
+    </div>
+    <!-- headerNav ends here -->
+
+    <div class="altSlideContainer" id="altSlideContainer">
+
+
+        <!-- <a href="" class="altSlideChangeButton"><i class="fa fa-chevron-left" onclick=""></i></a>
+        <a href="" class="altSlideChangeButton"><i class="fa fa-chevron-right" onclick=""></i></a> -->
+        
+
+        <div class="altSlide altSlideActive">
+            <div class="altSlideImgContainer">
+            <img class="altSlideImg" alt="">
+            </div>
+            <div class="altSlideInfoContainer">
+                <p class="altSlideTitle"></p>
+                <div class="altSlideTag">
+                    <div class="tagTextHolder"><i class="fa-solid fa-tag"></i><span class="tagTaxt"></span></div>
+                    <a href="#" class="altSlideWatchLink" target="_blank">
+                        <button class="altSlideWatch"><i class="fa-solid fa-circle-play"></i><span>Watch</span></button>
+                    </a>
+                </div>
+                <p class="altSlideDescription"></p>
+                <div class="altSlideAnimeInfo">
+                    <p class="altSlideAnimeName"></p>
+                    <p class="altSlideAnimeType"></p>
+                    <p class="altSlideAnimeScore"></p>
+                    <p class="altSlideAnimeStatus"></p>
+                    <p class="altSlideAnimeStudio"></p>
+                    <p class="altSlideAnimeGenre"></p>
+                </div>
+
+            </div>
+        </div>
+        <!-- altSlide ends -->
+       
+    </div>
+
+    <!-- altSlideContainer ends -->
+
+
+
+
+    <div class="altSlideBtnHolder">
+        <button class="altSlideIndicatorButton altSlideButtonActive"></button>
+    </div>
+
+
+
+
+    <div class="mainContainer">
+        <section class="trending" id="trending">
+            <div class="sectionTitle">
+                <i class="fa fa-arrow-trend-up trendUpIcon"></i>
+                <P>Trending</P>
+                <a>View All</a>
+            </div>
+            <div class="sectionBox">
+
+                
+                <div class="sectionContent" id="sectionContentId">
+                    <div class="imgInfoContainer">
+                        <img class="animeImg">
+                        <div class="hiddenInfo">
+                            <p class="animeName"></p>
+                            <p class="studio"></p>
+                            <p class="release"></p>
+                            <p class="genre"></p>
+                            <p class="rating"></p>
+                            <p class="type"></p>
+                            <p class="status"></p>
+                            <p class="episode"></p>
+                            <p class="length"></p>
+                        </div>
+                        <div class="imgExtBtn">
+                            <a class="watchBtnLink" target="_blank" href=""><button class="watchBtn" data-text="Watch Now"><i class="fa-solid fa-play"></i></button></a>
+                            <button class="addBtn" data-text="Add to Watchlist"><i class="fa fa-add"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sectionContentFooter">
+                        <p class="footerAnimeName"></p>
+                        <p class="footerStudio"></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- sectionBox -->
+
+        </section>
+        <!-- trendingSection -->
+
+        <section class="beginner" id="beginner">
+            <div class="sectionTitle">
+                <i class="fa fa-signs-post signsPostIcon"></i>
+                <P>For Beginners</P>
+                <a>View All</a>
+            </div>
+            <div class="sectionBox">         
+                <div class="sectionContent" id="sectionContentId">
+                    <div class="imgInfoContainer">
+                        <img class="animeImg">
+                        <div class="hiddenInfo">
+                            <p class="animeName"></p>
+                            <p class="studio"></p>
+                            <p class="release"></p>
+                            <p class="genre"></p>
+                            <p class="rating"></p>
+                            <p class="type"></p>
+                            <p class="status"></p>
+                            <p class="episode"></p>
+                            <p class="length"></p>
+                        </div>
+                        <div class="imgExtBtn">
+                            <a class="watchBtnLink" target="_blank" href=""><button class="watchBtn" data-text="Watch Now"><i class="fa-solid fa-play"></i></button></a>
+                            <button class="addBtn" data-text="Add to Watchlist"><i class="fa fa-add"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sectionContentFooter">
+                        <p class="footerAnimeName"></p>
+                        <p class="footerStudio"></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- sectionBox -->
+
+        </section>
+        <!-- beginnerSection -->
+
+        <section class="characterBox">
+            <div class="sectionTitle">
+                <i class="fa fa-heart heartIcon"></i>
+                <P>Popular Characters</P>
+                <a>View All</a>
+            </div>
+            <div class="characterHolder">
+
+                <div class="characterContent">
+                    <div class="characterPicContainer">
+                        <img  class="characterPic" src="img/anime character pic/makise kurisu.jpg" alt="">
+                        <div class="characterPopularity">
+                            <p class="followers">
+                                <i class="fa-solid fa-user "></i><span class="followerCount"></span>
+                            </p>
+                            <i class="fa-regular fa-heart" id="heartIcon" onclick="followCharacter()"></i>
+                        </div>
+                    </div>
+                    <p class="characterDetails">
+                        <span class="characterName"></span>
+                        <span class="characterAnimeName"></span>
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- characterBox -->
+
+        <section class="psychological" id="psychological">
+            <div class="sectionTitle">
+                <i class="fa-solid fa-arrows-turn-to-dots"></i>                <!-- <i class="fa-solid fa-exclamation"></i> -->
+                <P>Mystery</P>
+                <a>View All</a>
+            </div>
+            <div class="sectionBox">         
+                <div class="sectionContent" id="sectionContentId">
+                    <div class="imgInfoContainer">
+                        <img class="animeImg">
+                        <div class="hiddenInfo">
+                            <p class="animeName"></p>
+                            <p class="studio"></p>
+                            <p class="release"></p>
+                            <p class="genre"></p>
+                            <p class="rating"></p>
+                            <p class="type"></p>
+                            <p class="status"></p>
+                            <p class="episode"></p>
+                            <p class="length"></p>
+                        </div>
+                        <div class="imgExtBtn">
+                            <a class="watchBtnLink" target="_blank" href=""><button class="watchBtn" data-text="Watch Now"><i class="fa-solid fa-play"></i></button></a>
+                            <button class="addBtn" data-text="Add to Watchlist"><i class="fa fa-add"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="sectionContentFooter">
+                        <p class="footerAnimeName"></p>
+                        <p class="footerStudio"></p>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- sectionBox -->
+
+        </section>
+        <!-- psychologicalSection -->
+
+        
+    </div>
+    <!-- mainContainer -->
+
+
+    <footer>
+        <div class="siteInfo">
+            <p>ANiDOX</p>
+            <span>An Extreme Anime Database</span>
+        </div>
+        <div class="siteCommercial">
+            <div class="socialMedia">
+                <p>STAY UPDATED</p>
+                <i class="fa-brands fa-square-facebook facebook-icon" data-text="Facebook"></i>
+                <i class="fa-brands fa-twitter twitter-icon" data-text="Twitter"></i>
+                <i class="fa-brands fa-instagram instagram-icon" data-text="Instagram"></i>
+                <i class="fa-brands fa-youtube youtube-icon" data-text="Youtube"></i>
+            </div>
+
+            <div class="contact">
+                <p>REVIEW THIS SITE</p>
+                <i class="bi-pen"></i>
+                <span>@anidoxcommunity</span>
+            </div>
+
+        </div>
+    </footer>
+
+    
+
+
+</body>
+
+<script>
+    // function followCharacter() {
+        // var heartIcon = document.querySelector('#heartIcon');
+        // heartIcon.addEventListener
+// }
+</script>
+
+
+</html>
