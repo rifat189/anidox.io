@@ -2,7 +2,7 @@ window.addEventListener('scroll', (e)=>{
     const nav = document.querySelector('.headerNav');
     const toTopBtn = document.querySelector('.scrollToTop');
     
-    if (window.pageYOffset> 400) {
+    if (window.pageYOffset> 0) {
         nav.classList.add("navShadow");
         toTopBtn.style.bottom = '20px';
     } else {

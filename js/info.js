@@ -3,6 +3,7 @@ $(document).ready(function(){
     trending();
     Beginner();
     Mystery();
+    tocShow();
     showInfo();
     userDetails();
 
@@ -275,23 +276,29 @@ function Mystery() {
 
 }
 
+function tocShow() {
+    var listIconContainer = document.querySelector('.listIconContainer');
+    var tableOfContentList = document.querySelector('.tableOfContentList');
+
+    listIconContainer.addEventListener('click', function(){
+        if (tableOfContentList.style.display === 'flex') {
+            tableOfContentList.style.display = 'none';
+            listIconContainer.style.background = 'transparent';
+            listIconContainer.style.color = '#203040ca';
+
+        } else {
+            tableOfContentList.style.display = 'flex';
+            listIconContainer.style.background = '#004385';
+            listIconContainer.style.color = '#fff';
+
+        }
+    })
+}
+
 function userDetails() {
     var userIconContainer = document.querySelector('.userIconContainer');
     var userSettings = document.querySelector('.userSettings');
 
-    // userIconContainer.addEventListener('click',function(){
-    //     if (userSettings.style.filter === 'opacity(1)') {
-    //         userSettings.style.filter = 'opacity(0)';
-    //         userSettings.style.top = '110%';
-
-    //     }
-    //     else{
-    //         userSettings.style.top = '130%';
-    //         userSettings.style.filter = 'opacity(1)';
-
-    //     }
-    // })
-    
     userIconContainer.addEventListener('click',function(){
         if (userSettings.style.display === 'flex') {
             userSettings.style.display = 'none';
