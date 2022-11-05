@@ -21,7 +21,7 @@
 
 <body>
 
-    <a href="#altSlideContainer" class="scrollToTop">
+    <a href="#" class="scrollToTop">
         <i class="fa fa-caret-up"></i>
     </a>
 
@@ -29,6 +29,10 @@
         <!-- <img src="img/aa.png" alt="" class="webLogo"> -->
         <p class="headerLogo">ANiDOX</p>
 
+        <div class="topChart">
+            <a href="top-chart.html" class="topChartLink">TOP CHARTS</a>
+            <span id="hoverUnderline"></span>
+        </div>
 
         <div class="navOptions">
             <div class="navOptionsList genre" >
@@ -46,24 +50,26 @@
             </div>
         </div>
 
-        <div class="searchBar">
-            <p class="searchContainer">
-                <i class="fa fa-search"></i>
-            </p>
-            <input type="text" class="inputBox" placeholder="Search">
+        <div class="searchBarContainer">
+            <div class="searchBar">
+                <p class="searchContainer">
+                    <i class="fa fa-search"></i>
+                </p>
+                <input type="text" class="inputBox" placeholder="Search">
+            </div>
+            <!-- searchBar -->
         </div>
-        <!-- searchBar -->
 
         <div class="tableOfContent">
-            <div class="listIconContainer">
+            <div class="listIconContainer" data-text="Table Of Content">
                 <i class="fa-solid fa-bars-staggered"></i>
             </div>
             <div class="tableOfContentList">
-                <a><i class="fa fa-caret-right"></i>Latest News</a>
-                <a><i class="fa fa-caret-right"></i>List: Trending</a>
-                <a><i class="fa fa-caret-right"></i>List: Beginners</a>
-                <a><i class="fa fa-caret-right"></i>Popular Character</a>
-                <a><i class="fa fa-caret-right"></i> List: Mystery</a>
+                <a href="#"><i class="fa fa-angles-right"></i>Latest News</a>
+                <a href="#trending"><i class="fa fa-angles-right"></i>List: Trending</a>
+                <a href="#beginner"><i class="fa fa-angles-right"></i>List: Beginners</a>
+                <a href="#characterBox"><i class="fa fa-angles-right"></i>Popular Character</a>
+                <a href="#psychological"><i class="fa fa-angles-right"></i> List: Mystery</a>
 
             </div>
             
@@ -85,7 +91,7 @@
     </div>
     <!-- headerNav ends here -->
 
-    <div class="altSlideContainer" id="altSlideContainer">
+    <div class="altSlideContainer" id="altSlideContainer" name="altSlideContainer">
 
 
         <!-- <a href="" class="altSlideChangeButton"><i class="fa fa-chevron-left" onclick=""></i></a>
@@ -217,7 +223,7 @@
         </section>
         <!-- beginnerSection -->
 
-        <section class="characterBox">
+        <section class="characterBox" id="characterBox" >
             <div class="sectionTitle">
                 <i class="fa fa-heart heartIcon"></i>
                 <P>Popular Characters</P>
@@ -312,6 +318,7 @@
             </div>
 
         </div>
+
     </footer>
 
     
@@ -320,11 +327,19 @@
 </body>
 
 <script>
-    // function followCharacter() {
-        // var heartIcon = document.querySelector('#heartIcon');
-        // heartIcon.addEventListener
-// }
-</script>
+    const topChart = document.getElementsByClassName('topChart')[0];
+    const topChartLink = document.getElementsByClassName('topChartLink')[0];
+    const hoverUnderline = document.getElementById('hoverUnderline');
 
+    topChart.addEventListener('mouseover', function(){
+        hoverUnderline.style.animation = 'hoverUnderline 0.4s 1 normal forwards' ;
+        topChartLink.style.color = '#004385';
+    });
+    topChart.addEventListener('mouseleave', function(){
+        hoverUnderline.style.animation = 'hoverUnderlineHidden 0.2s 1 reverse forwards' ;
+        topChartLink.style.color = '#203040';
+    });
+ 
+</script>
 
 </html>
