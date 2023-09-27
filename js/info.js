@@ -203,6 +203,8 @@ function Mystery() {
         ['The Promised Neverland', 'CloverWorks', 'Winter 2019', '8.53', 'TV Series', 'Finished', '12', '22', 'img/anime poster/the promised neverland poster.jpg', 'https://9anime.to/watch/the-promised-neverland.r12q', ['Psychological', 'Survival'], '#37A39C'],
         ['Bakemonogatari', 'Shaft', 'Summer 2009', '8.34', 'TV Series', 'Finished', '15', '25', 'img/anime poster/bakemonogatari poster.jpg', 'https://9anime.to/watch/bakemonogatari.579', ['Mystery', 'Romance', 'Supernatural'], '#387BB1'],
         ['Paprika', 'Madhouse', 'Nov 25, 2006', '8.04', 'Movie', 'Finished', '1', '90', 'img/anime poster/paprika poster.jpg', 'https://9anime.to/watch/paprika.lnq6', ['Horror', 'Suspense', 'Sci-Fi'], 'crimson'],
+        ['Perfect Blue', 'Madhouse, ONIRO', 'Feb 28, 1998', '8.54', 'Movie', 'Finished', '1', '81', 'img/anime poster/paprika poster.jpg', 'https://9anime.to/watch/paprika.lnq6', ['Avant Grande', 'Horror', 'Drama', 'Sci-Fi'], 'slategrey'],
+
     ];
 
     var psychoSection = document.getElementById('psychological');
