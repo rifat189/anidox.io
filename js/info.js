@@ -203,7 +203,7 @@ function Mystery() {
         ['The Promised Neverland', 'CloverWorks', 'Winter 2019', '8.53', 'TV Series', 'Finished', '12', '22', 'img/anime poster/the promised neverland poster.jpg', 'https://9anime.to/watch/the-promised-neverland.r12q', ['Psychological', 'Survival'], '#37A39C'],
         ['Bakemonogatari', 'Shaft', 'Summer 2009', '8.34', 'TV Series', 'Finished', '15', '25', 'img/anime poster/bakemonogatari poster.jpg', 'https://9anime.to/watch/bakemonogatari.579', ['Mystery', 'Romance', 'Supernatural'], '#387BB1'],
         ['Perfect Blue', 'Madhouse, ONIRO', 'Feb 28, 1998', '8.54', 'Movie', 'Finished', '1', '81', 'img/anime poster/perfect blue poster.jpg', 'https://aniwave.to/watch/perfect-blue.90y8', ['Avant Grande', 'Horror', 'Drama', 'Sci-Fi'], 'slategrey'],
-        ['Paprika', 'Madhouse', 'Nov 25, 2006', '8.04', 'Movie', 'Finished', '1', '90', 'img/anime poster/paprika poster.jpg', 'https://9anime.to/watch/paprika.lnq6', ['Horror', 'Suspense', 'Sci-Fi'], 'crimson'],
+        ['Paprika', 'Madhouse', 'Nov 25, 2006', '8.04', 'Movie', 'Finished', '1', '90', 'img/anime poster/paprika poster.jpg', 'https://9anime.to/watch/paprika.lnq6', ['Horror', 'Suspense', 'Sci-Fi'], '#5866BA'],
 
     ];
 
